@@ -121,10 +121,9 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval);
-  // for (var i = 0; i < ROCKS.length; i++) {
-  //   GAME.removeChild(GAME.querySelector(".rock"));
-  // }
-  GAME.parentNode.removeChild(GAME);
+  for (var i = 0; i < ROCKS.length; i++) {
+    GAME.removeChild(GAME.querySelector(".rock"));
+  }
   window.removeEventListener('keydown', moveDodger)
   ROCKS.length = 0;
   alert("You Lose!!!");
