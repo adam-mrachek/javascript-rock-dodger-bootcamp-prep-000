@@ -133,7 +133,7 @@ function endGame() {
 function moveDodger(e) {
   // implement me!
 
-  document.addEventListener('keydown', function(e) {
+
     if (e.which === LEFT_ARROW) {
       e.preventDefault();
       e.stopPropagation();
@@ -144,7 +144,7 @@ function moveDodger(e) {
       e.stopPropagation();
       moveDodgerRight();
     }
-  })
+
   /**
    * This function should call `moveDodgerLeft()`
    * if the left arrow is pressed and `moveDodgerRight()`
