@@ -104,10 +104,6 @@ function createRock(x) {
      */
   }
 
-  if (checkCollision(rock) === true) {
-    endGame()
-    return;
-  }
 
   // We should kick of the animation of the rock around here
   window.requestAnimationFrame(moveRock)
