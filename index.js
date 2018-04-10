@@ -168,8 +168,8 @@ function moveDodgerRight() {
   var rightNumbers = dodger.style.right.replace('px', '');
   var right = parseInt(rightNumbers, 10);
 
-  if (right < 400) {
-    dodger.style.right = `${right + 4}px`
+  if (right > 0) {
+    dodger.style.right = `${right - 4}px`
   }
   /**
    * This function should move DODGER to the right
